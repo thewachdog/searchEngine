@@ -9,4 +9,11 @@ def index(request):
     return render(request, "index.html", {})
 
 def search(request):
-    return render(request,"search.html")
+#    text = "Displaying article Number : %s" % searchValue
+#    return HttpResponse(text)
+    if request.GET:
+         searchValue = request.GET['searchValue']
+    context = {
+	'searchValue': searchValue
+    }
+    return render(request, "search.html", context)

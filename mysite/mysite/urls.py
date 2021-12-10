@@ -20,11 +20,10 @@ from myapp.views import *
 
 urlpatterns = [
 #    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     #path('', include('myapp.urls'))
     path('', index),
     path('search/',search),
-
 ]
 
 '''
