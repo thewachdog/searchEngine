@@ -12,8 +12,11 @@ def search(request):
 #    text = "Displaying article Number : %s" % searchValue
 #    return HttpResponse(text)
     if request.GET:
-         searchValue = request.GET['searchValue']
-    context = {
-	'searchValue': searchValue
-    }
-    return render(request, "search.html", context)
+        searchValue = request.GET['searchValue']
+        context = {'searchValue': searchValue}
+        if searchValue == '':
+            return "u r Hecker :-("
+        else:
+            return render(request, "search.html", context)
+    else:
+        return HttpResponse("u Hecker :(")
