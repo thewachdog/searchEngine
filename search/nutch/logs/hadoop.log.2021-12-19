@@ -1,0 +1,408 @@
+2021-12-19 13:50:21,659 INFO  crawl.Injector - Injector: starting at 2021-12-19 13:50:21
+2021-12-19 13:50:21,661 INFO  crawl.Injector - Injector: crawlDb: Crawl/crawldb
+2021-12-19 13:50:21,661 INFO  crawl.Injector - Injector: urlDir: nutch/urls
+2021-12-19 13:50:21,662 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2021-12-19 13:50:22,307 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-19 13:50:23,378 INFO  crawl.Injector - Injecting seed URL file file:/home/dhinesh/Desktop/barat/search/nutch/urls/seed.txt
+2021-12-19 13:50:23,536 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-19 13:50:25,801 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-19 13:50:25,803 INFO  mapreduce.Job - Running job: job_local1626290311_0001
+2021-12-19 13:50:26,912 INFO  mapreduce.Job - Job job_local1626290311_0001 running in uber mode : false
+2021-12-19 13:50:26,927 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-19 13:50:28,254 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2021-12-19 13:50:28,377 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:28,675 INFO  crawl.Injector - Injector: overwrite: false
+2021-12-19 13:50:28,676 INFO  crawl.Injector - Injector: update: false
+2021-12-19 13:50:28,818 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:28,938 INFO  mapreduce.Job -  map 100% reduce 50%
+2021-12-19 13:50:28,947 INFO  crawl.Injector - Injector: overwrite: false
+2021-12-19 13:50:28,947 INFO  crawl.Injector - Injector: update: false
+2021-12-19 13:50:29,939 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-19 13:50:29,940 INFO  mapreduce.Job - Job job_local1626290311_0001 completed successfully
+2021-12-19 13:50:29,966 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=6335040
+		FILE: Number of bytes written=8589901
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2270
+		Map output records=2270
+		Map output bytes=293503
+		Map output materialized bytes=58056
+		Input split bytes=898
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2269
+		Reduce shuffle bytes=58056
+		Reduce input records=2270
+		Reduce output records=2269
+		Spilled Records=4540
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=19
+		Total committed heap usage (bytes)=1030750208
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	injector
+		urls_injected=1
+		urls_merged=1
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=315285
+2021-12-19 13:50:30,031 INFO  crawl.Injector - Injector: Total urls rejected by filters: 0
+2021-12-19 13:50:30,031 INFO  crawl.Injector - Injector: Total urls injected after normalization and filtering: 1
+2021-12-19 13:50:30,031 INFO  crawl.Injector - Injector: Total urls injected but already in CrawlDb: 1
+2021-12-19 13:50:30,032 INFO  crawl.Injector - Injector: Total new urls injected: 0
+2021-12-19 13:50:30,064 INFO  crawl.Injector - Injector: finished at 2021-12-19 13:50:30, elapsed: 00:00:08
+2021-12-19 13:50:34,855 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-19 13:50:35,643 INFO  crawl.Generator - Generator: starting at 2021-12-19 13:50:35
+2021-12-19 13:50:35,643 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2021-12-19 13:50:35,643 INFO  crawl.Generator - Generator: filtering: false
+2021-12-19 13:50:35,645 INFO  crawl.Generator - Generator: normalizing: true
+2021-12-19 13:50:35,648 INFO  crawl.Generator - Generator: topN: 50000
+2021-12-19 13:50:35,864 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-19 13:50:37,931 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-19 13:50:37,932 INFO  mapreduce.Job - Running job: job_local933127067_0001
+2021-12-19 13:50:38,977 INFO  mapreduce.Job - Job job_local933127067_0001 running in uber mode : false
+2021-12-19 13:50:38,994 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-19 13:50:39,127 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2021-12-19 13:50:39,128 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2021-12-19 13:50:39,129 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2021-12-19 13:50:39,139 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2021-12-19 13:50:39,645 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2021-12-19 13:50:39,645 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2021-12-19 13:50:39,645 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2021-12-19 13:50:39,645 INFO  regex.RegexURLNormalizer - can't find rules for scope 'partition', using default
+2021-12-19 13:50:39,838 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:39,997 INFO  mapreduce.Job -  map 100% reduce 0%
+2021-12-19 13:50:40,076 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2021-12-19 13:50:40,335 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:40,429 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2021-12-19 13:50:40,999 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-19 13:50:40,999 INFO  mapreduce.Job - Job job_local933127067_0001 completed successfully
+2021-12-19 13:50:41,022 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=4985344
+		FILE: Number of bytes written=6716714
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2269
+		Map output records=1603
+		Map output bytes=188089
+		Map output materialized bytes=26277
+		Input split bytes=288
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=26277
+		Reduce input records=1603
+		Reduce output records=0
+		Spilled Records=3206
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=14
+		Total committed heap usage (bytes)=832569344
+	Generator
+		SCHEDULE_REJECTED=666
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=314270
+	File Output Format Counters 
+		Bytes Written=16
+2021-12-19 13:50:41,022 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2021-12-19 13:50:41,045 INFO  crawl.Generator - Generator:    666  SCHEDULE_REJECTED
+2021-12-19 13:50:41,055 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2021-12-19 13:50:42,056 INFO  crawl.Generator - Generator: segment: Crawl/segments/20211219135042
+2021-12-19 13:50:42,069 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:42,883 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-19 13:50:42,883 INFO  mapreduce.Job - Running job: job_local489160211_0002
+2021-12-19 13:50:43,248 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-19 13:50:43,884 INFO  mapreduce.Job - Job job_local489160211_0002 running in uber mode : false
+2021-12-19 13:50:43,884 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-19 13:50:43,885 INFO  mapreduce.Job - Job job_local489160211_0002 completed successfully
+2021-12-19 13:50:43,892 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=7427481
+		FILE: Number of bytes written=10405913
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1603
+		Map output records=1603
+		Map output bytes=275568
+		Map output materialized bytes=35304
+		Input split bytes=360
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1603
+		Reduce shuffle bytes=35304
+		Reduce input records=1603
+		Reduce output records=1603
+		Spilled Records=3206
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=14
+		Total committed heap usage (bytes)=635437056
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=202741
+	File Output Format Counters 
+		Bytes Written=189675
+2021-12-19 13:50:44,109 INFO  crawl.Generator - Generator: finished at 2021-12-19 13:50:43, elapsed: 00:00:08
+2021-12-19 13:50:49,817 INFO  fetcher.Fetcher - Fetcher: starting at 2021-12-19 13:50:49
+2021-12-19 13:50:49,818 INFO  fetcher.Fetcher - Fetcher: segment: Crawl/segments/20211219135042
+2021-12-19 13:50:49,818 INFO  fetcher.Fetcher - Fetcher Timelimit set for : 1639912849818  (2021-12-19 16:50:49)
+2021-12-19 13:50:50,453 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-19 13:50:51,304 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-19 13:50:53,695 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-19 13:50:53,696 INFO  mapreduce.Job - Running job: job_local1710668555_0001
+2021-12-19 13:50:54,310 INFO  fetcher.FetchItemQueues - Using queue mode : byHost
+2021-12-19 13:50:54,311 INFO  fetcher.Fetcher - Fetcher: threads: 50
+2021-12-19 13:50:54,463 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2021-12-19 13:50:54,729 INFO  mapreduce.Job - Job job_local1710668555_0001 running in uber mode : false
+2021-12-19 13:50:54,731 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-19 13:50:54,781 INFO  fetcher.QueueFeeder - QueueFeeder finished: total 1603 records
+2021-12-19 13:50:54,784 INFO  fetcher.QueueFeeder - QueueFeeder queuing status:
+2021-12-19 13:50:54,784 INFO  fetcher.QueueFeeder - 	1603	SUCCESSFULLY_QUEUED
+2021-12-19 13:50:54,785 INFO  fetcher.QueueFeeder - 	0	ERROR_CREATE_FETCH_ITEM
+2021-12-19 13:50:54,792 INFO  fetcher.QueueFeeder - 	0	ABOVE_EXCEPTION_THRESHOLD
+2021-12-19 13:50:54,792 INFO  fetcher.QueueFeeder - 	0	HIT_BY_TIMELIMIT
+2021-12-19 13:50:55,310 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,396 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,398 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,399 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,400 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,402 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,403 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,405 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,411 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,413 INFO  fetcher.FetcherThread - FetcherThread 52 fetching https://es-co.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,413 INFO  fetcher.FetcherThread - FetcherThread 50 fetching https://ga.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,414 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,416 INFO  fetcher.FetcherThread - FetcherThread 49 fetching https://tokens.indieauth.com/token (queue crawl delay=5000ms)
+2021-12-19 13:50:55,416 INFO  fetcher.FetcherThread - FetcherThread 51 fetching https://fa-af.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,417 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,417 INFO  fetcher.FetcherThread - FetcherThread 53 fetching https://abs.twimg.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,868 INFO  http.Http - http.proxy.host = null
+2021-12-19 13:50:55,868 INFO  http.Http - http.proxy.port = 8080
+2021-12-19 13:50:55,868 INFO  http.Http - http.proxy.exception.list = false
+2021-12-19 13:50:55,868 INFO  http.Http - http.timeout = 10000
+2021-12-19 13:50:55,868 INFO  http.Http - http.content.limit = 1048576
+2021-12-19 13:50:55,868 INFO  http.Http - http.agent = CrawlerName/Nutch-1.18
+2021-12-19 13:50:55,868 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2021-12-19 13:50:55,868 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2021-12-19 13:50:55,868 INFO  http.Http - http.enable.cookie.header = true
+2021-12-19 13:50:55,870 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,877 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,878 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,917 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,917 INFO  fetcher.FetcherThread - FetcherThread 55 fetching https://kmr.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,917 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,920 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,921 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,926 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,929 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,955 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,955 INFO  fetcher.FetcherThread - FetcherThread 56 fetching https://fr-ca.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,956 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,957 INFO  fetcher.FetcherThread - FetcherThread 54 fetching https://pubmed.ncbi.nlm.nih.gov/7398616/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,965 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,965 INFO  fetcher.FetcherThread - FetcherThread 57 fetching https://km.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,966 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,967 INFO  fetcher.FetcherThread - FetcherThread 58 fetching http://trainedmonkey.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,971 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,972 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,975 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,976 INFO  fetcher.FetcherThread - FetcherThread 59 fetching https://blog.doist.com/end-work-day/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,976 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,977 INFO  fetcher.FetcherThread - FetcherThread 60 fetching https://en-au.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,977 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,977 INFO  fetcher.FetcherThread - FetcherThread 61 fetching https://et.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,978 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,979 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,980 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,984 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,985 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,989 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,990 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,992 INFO  fetcher.FetcherThread - FetcherThread 62 fetching https://ar.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,994 INFO  fetcher.FetcherThread - FetcherThread 63 fetching https://kal.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,995 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,997 INFO  fetcher.FetcherThread - FetcherThread 64 fetching https://api.twitter.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,997 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:55,997 INFO  fetcher.FetcherThread - FetcherThread 65 fetching https://cs.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,998 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:55,998 INFO  fetcher.FetcherThread - FetcherThread 67 fetching https://lij.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:55,999 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,000 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,001 INFO  fetcher.FetcherThread - FetcherThread 66 fetching https://gu.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,002 INFO  fetcher.FetcherThread - FetcherThread 68 fetching https://t.co/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,002 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,004 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,004 INFO  fetcher.FetcherThread - FetcherThread 69 fetching https://cse.sairamit.edu.in/course-offered/feed/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,005 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,007 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,007 INFO  fetcher.FetcherThread - FetcherThread 70 fetching http://www.accessify.com/blog/default.asp (queue crawl delay=5000ms)
+2021-12-19 13:50:56,008 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,009 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,009 INFO  fetcher.FetcherThread - FetcherThread 71 fetching http://www.gnome-girl.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,009 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,013 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,013 INFO  fetcher.FetcherThread - FetcherThread 72 fetching https://www.youtube.com/t/contact_us/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,013 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,015 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,015 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,017 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,017 INFO  fetcher.FetcherThread - FetcherThread 73 fetching https://mba.sairamit.edu.in/industrial-visit-sept-2017/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,019 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,019 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,035 INFO  fetcher.FetcherThread - FetcherThread 74 fetching https://am.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,035 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,041 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,042 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,043 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,044 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,045 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,046 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,048 INFO  fetcher.FetcherThread - FetcherThread 77 fetching https://aperture.p3k.io/microsub/277 (queue crawl delay=5000ms)
+2021-12-19 13:50:56,049 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,050 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,051 INFO  fetcher.FetcherThread - FetcherThread 78 fetching https://mech.sairamit.edu.in/wp-json/wp/v2/posts/3344 (queue crawl delay=5000ms)
+2021-12-19 13:50:56,050 INFO  fetcher.FetcherThread - FetcherThread 76 fetching https://eo.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,050 INFO  fetcher.FetcherThread - FetcherThread 75 fetching https://da.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,052 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,053 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,054 INFO  fetcher.FetcherThread - FetcherThread 79 fetching https://az.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,054 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,057 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,058 INFO  fetcher.FetcherThread - FetcherThread 80 fetching https://www.ccohs.ca/oshanswers/psychosocial/violence_working_late.html (queue crawl delay=5000ms)
+2021-12-19 13:50:56,060 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,061 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,065 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,066 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,067 INFO  fetcher.FetcherThread - FetcherThread 81 fetching https://ve.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,068 INFO  fetcher.FetcherThread - FetcherThread 82 fetching https://www.tcpdf.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,070 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,071 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,074 INFO  fetcher.FetcherThread - FetcherThread 83 fetching https://bg.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,080 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,080 INFO  fetcher.FetcherThread - FetcherThread 84 fetching http://greenteapress.com/wp/think- (queue crawl delay=5000ms)
+2021-12-19 13:50:56,082 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,082 INFO  fetcher.FetcherThread - FetcherThread 85 fetching http://www.microcontentnews.com/resources/glossary/blogrolling.htm (queue crawl delay=5000ms)
+2021-12-19 13:50:56,089 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,090 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,093 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,094 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,095 INFO  fetcher.FetcherThread - FetcherThread 86 fetching https://fi.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,101 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,102 INFO  fetcher.FetcherThread - FetcherThread 87 fetching https://pbs.twimg.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,103 INFO  fetcher.FetcherThread - FetcherThread 88 fetching https://it.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,122 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,123 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,123 INFO  fetcher.FetcherThread - FetcherThread 89 fetching https://hs.sairamit.edu.in/wp-json/wp/v2/posts/579 (queue crawl delay=5000ms)
+2021-12-19 13:50:56,124 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,125 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,126 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,126 INFO  fetcher.FetcherThread - FetcherThread 90 fetching https://bal.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,127 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,127 INFO  fetcher.FetcherThread - FetcherThread 91 fetching https://cor.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,128 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,131 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,132 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,133 INFO  fetcher.FetcherThread - FetcherThread 92 fetching https://hy.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,135 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,135 INFO  fetcher.FetcherThread - FetcherThread 93 fetching https://ku.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,136 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,137 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,137 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,138 INFO  fetcher.FetcherThread - FetcherThread 94 fetching http://www.philmccluskey.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,141 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,142 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,143 INFO  fetcher.FetcherThread - FetcherThread 95 fetching https://es-cr.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,145 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,146 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,147 INFO  fetcher.FetcherThread - FetcherThread 96 fetching https://labornotes.org/2021/10/letter-carriers-resist-after-dark-delivery (queue crawl delay=5000ms)
+2021-12-19 13:50:56,151 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2021-12-19 13:50:56,154 INFO  fetcher.FetcherThread - FetcherThread 43 Using queue mode : byHost
+2021-12-19 13:50:56,155 INFO  fetcher.FetcherThread - FetcherThread 97 fetching http://chris.pirillo.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:56,162 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2021-12-19 13:50:56,162 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2021-12-19 13:50:56,162 INFO  fetcher.Fetcher - fetcher.maxNum.threads can't be < than 50 : using 50 instead
+2021-12-19 13:50:56,164 INFO  fetcher.FetcherThread - FetcherThread 98 fetching http://metagrrrl.com/ (queue crawl delay=5000ms)
+2021-12-19 13:50:57,176 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1553, fetchQueues.getQueueCount=185
+2021-12-19 13:50:58,096 WARN  http.Http - Missing or invalid HTTP status line
+org.apache.nutch.protocol.http.api.HttpException: Bad status line, no HTTP response code: 
+	at org.apache.nutch.protocol.http.HttpResponse.parseStatusLine(HttpResponse.java:566)
+	at org.apache.nutch.protocol.http.HttpResponse.<init>(HttpResponse.java:274)
+	at org.apache.nutch.protocol.http.Http.getResponse(Http.java:63)
+	at org.apache.nutch.protocol.http.api.HttpRobotRulesParser.getRobotRulesSet(HttpRobotRulesParser.java:126)
+	at org.apache.nutch.protocol.RobotRulesParser.getRobotRulesSet(RobotRulesParser.java:221)
+	at org.apache.nutch.protocol.http.api.HttpBase.getRobotRules(HttpBase.java:758)
+	at org.apache.nutch.fetcher.FetcherThread.run(FetcherThread.java:309)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:776)
+	at org.apache.nutch.protocol.http.HttpResponse.parseStatusLine(HttpResponse.java:564)
+	... 6 more
+2021-12-19 13:50:58,284 WARN  http.Http - No HTTP header, assuming HTTP/0.9 for http://metagrrrl.com/robots.txt
+2021-12-19 13:50:58,177 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1553, fetchQueues.getQueueCount=185
+2021-12-19 13:50:58,516 WARN  http.Http - Missing or invalid HTTP status line
+org.apache.nutch.protocol.http.api.HttpException: Bad status line, no HTTP response code: 
+	at org.apache.nutch.protocol.http.HttpResponse.parseStatusLine(HttpResponse.java:566)
+	at org.apache.nutch.protocol.http.HttpResponse.<init>(HttpResponse.java:274)
+	at org.apache.nutch.protocol.http.Http.getResponse(Http.java:63)
+	at org.apache.nutch.protocol.http.api.HttpBase.getProtocolOutput(HttpBase.java:386)
+	at org.apache.nutch.fetcher.FetcherThread.run(FetcherThread.java:352)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:776)
+	at org.apache.nutch.protocol.http.HttpResponse.parseStatusLine(HttpResponse.java:564)
+	... 4 more
+2021-12-19 13:50:58,517 WARN  http.Http - No HTTP header, assuming HTTP/0.9 for http://metagrrrl.com/
+2021-12-19 13:50:58,989 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2021-12-19 13:50:58,998 INFO  fetcher.FetcherThread - FetcherThread 98 fetching http://ma.tt/ (queue crawl delay=5000ms)
+2021-12-19 13:50:59,064 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2021-12-19 13:50:59,154 INFO  fetcher.FetcherThread - FetcherThread 97 fetching https://www.forbes.com/sites/jacquelynsmith/2012/08/28/14-things-you-should-do-at-the-end-of-every-work-day/ (queue crawl delay=5000ms)
+2021-12-19 13:50:59,184 INFO  fetcher.FetcherThread - FetcherThread 85 fetching http://www.w3.org/TR/html401/HTMLlat1.ent (queue crawl delay=5000ms)
+2021-12-19 13:50:59,294 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1550, fetchQueues.getQueueCount=185
+2021-12-19 13:51:00,295 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1550, fetchQueues.getQueueCount=185
+2021-12-19 13:51:01,672 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1550, fetchQueues.getQueueCount=185
+2021-12-19 13:51:01,705 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2021-12-19 13:51:01,706 INFO  fetcher.FetcherThread - FetcherThread 98 fetching https://m.youtube.com/channel/UCSzAwC5CzAIirFp800AT3QQ (queue crawl delay=5000ms)
+2021-12-19 13:51:02,142 INFO  fetcher.FetcherThread - FetcherThread 85 fetching https://indieweb.org/2021/D%C3%BCsseldorf (queue crawl delay=5000ms)
+2021-12-19 13:51:02,675 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1548, fetchQueues.getQueueCount=185
+2021-12-19 13:51:03,676 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1548, fetchQueues.getQueueCount=185
+2021-12-19 13:51:04,777 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1548, fetchQueues.getQueueCount=185
+2021-12-19 13:51:04,844 INFO  fetcher.FetcherThread - FetcherThread 71 fetching http://nptel.ac.in/courses/117101002/ (queue crawl delay=5000ms)
+2021-12-19 13:51:05,584 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2021-12-19 13:51:05,585 INFO  fetcher.FetcherThread - FetcherThread 94 fetching https://hu.wordpress.org/ (queue crawl delay=5000ms)
+2021-12-19 13:51:05,778 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1546, fetchQueues.getQueueCount=185
+2021-12-19 13:51:06,779 INFO  fetcher.Fetcher - -activeThreads=50, spinWaiting=0, fetchQueues.totalSize=1546, fetchQueues.getQueueCount=185

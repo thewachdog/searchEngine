@@ -105,8 +105,8 @@ def portScan():
                     if r.status == 200:
                         # it'll return all the subdomains in the ip:port
                         # scrap(f'http://{ip}:{port[0]}') [No need for it, used Nutch          
-                        # Write in the host.txt file (for the Nutch to crawl) 
-                        file1 = open('seed.txt', 'w') # need to create this file beforehand
+                        # Write in the search/nutch/seed.txt file (for the Nutch to crawl) 
+                        file1 = open('search/nutch/urls/seed.txt', 'a') # need to create this file beforehand
                         file1.writelines(f'http://{ip}:{port[0]}')
                         file1.close()
                 except:
