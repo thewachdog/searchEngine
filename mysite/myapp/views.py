@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+import urllib3
+import json
+
 # Create your views here. (WTF IS VIEWS ????)
 from django.http import HttpResponse
 
@@ -13,7 +16,18 @@ def search(request):
 #    return HttpResponse(text)
     if request.GET:
         searchValue = request.GET['searchValue']
-        context = {'searchValue': searchValue}
+
+
+        # Store results ...
+        http = urllib3.PoolManager()
+        # resp = http.request('GET', f'http://localhost:8983/solr/nutch/select?q={searchValue}')
+        # r = json.loads(resp.data.decode("utf-8"))
+        # count = r['response']['numFound']
+
+
+        context = {'searchValue': searchValue, 
+        'r' : json.loads((http.request('GET', f'http://localhost:8983/solr/nutch/select?q={searchValue}')).data.decode("utf-8")),
+        }
         if searchValue == '':
             return "u r Hecker :-("
         else:

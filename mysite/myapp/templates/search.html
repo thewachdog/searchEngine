@@ -39,7 +39,7 @@
                       aria-describedby="button-addon2"
                       value="{{searchValue}}"
                       >
-                      <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+                      <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search !!!</button>
                   </div>
               </form>
             </ul>
@@ -52,12 +52,27 @@
       </nav>
       <br>
       <div class="container">
-        <h3>
+        <h2>
           Search result for {{ searchValue }}
-        </h3>
+        </h2>
+        <h6>
+          About {{ r.response.numFound }} results ...
+        </h6>
+        <hr>
       </div>
       <div class="container">
-        <hr>
+        {% for result in r.response.docs %}
+        <a href="{{ result.url }}">
+          <h3>
+            {{ result.title }}
+            <br>
+          </h3>
+        </a>
+        <h5>
+          Document type : {{ result.type.0 }}
+        </h5>
+          <hr>
+        {% endfor %}
       </div>
 </body>
 </html>
