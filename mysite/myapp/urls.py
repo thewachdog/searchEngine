@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('search', views.search)
-    path('search/media', views.search.media)
+    path('search', views.search),
+    path('search/media/indianFlag.png', views.media)
 ]

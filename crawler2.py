@@ -66,7 +66,7 @@ import requests
 def hostScan():
     hostScanCommand = "nmap -sP "+myIP+"/24 " # -oG  - | awk '/Up$/{print $2}'"
     outputHostScanCommand = subprocess.run( hostScanCommand.split(), capture_output = True, text=True).stdout.split('\n')
-
+    print(outputHostScanCommand)
     for lines in outputHostScanCommand:
         if 'up' in lines.split():
             IPLine = outputHostScanCommand[outputHostScanCommand.index(lines) - 1]
@@ -139,3 +139,4 @@ upIP = []
 
 hostScan()
 portScan()
+   

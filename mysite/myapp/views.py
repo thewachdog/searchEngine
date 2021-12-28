@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from django.http import FileResponse
 import urllib3
 import json
 
@@ -17,20 +18,22 @@ def search(request):
     if request.GET:
         searchValue = request.GET['searchValue']
 
-
         # Store results ...
         http = urllib3.PoolManager()
         # resp = http.request('GET', f'http://localhost:8983/solr/nutch/select?q={searchValue}')
         # r = json.loads(resp.data.decode("utf-8"))
         # count = r['response']['numFound']
 
-
-        context = {'searchValue': searchValue, 
-        'r' : json.loads((http.request('GET', f'http://localhost:8983/solr/nutch/select?q={searchValue}')).data.decode("utf-8")),
-        }
         if searchValue == '':
-            return "u r Hecker :-("
+            return "Dont hack me :|"
         else:
+            context = {'searchValue': searchValue, 
+            'r' : json.loads((http.request('GET', f'http://localhost:8983/solr/nutch/select?&q={searchValue}')).data.decode("utf-8")),
+            }
             return render(request, "search.html", context)
     else:
         return HttpResponse("u Hecker :(")
+
+def media(request):
+    img = open('favicon.ico', 'rb')
+    return FileResponse(img)
