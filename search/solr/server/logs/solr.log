@@ -28,3 +28,13 @@
 2021-12-29 19:01:28.536 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a1c17f{/solr,file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
 2021-12-29 19:01:28.553 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
 2021-12-29 19:01:28.556 INFO  (main) [   ] o.e.j.s.Server Started @10260ms
+2021-12-29 19:30:54.753 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2021-12-29 19:30:54.753 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-12-29 19:30:54.856 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1832657711
+2021-12-29 19:30:54.973 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2021-12-29 19:30:54.978 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61f6d381: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@52ca7d28
+2021-12-29 19:30:55.065 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2021-12-29 19:30:55.070 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@29fd8e67: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@54e40d99
+2021-12-29 19:30:55.080 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2021-12-29 19:30:55.083 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@e146f93: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@63d495e7
+2021-12-29 19:30:55.183 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@24a1c17f{/solr,null,UNAVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
