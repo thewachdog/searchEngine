@@ -87,3 +87,6 @@
 2021-12-29 19:42:49.984 INFO  (qtp319670866-16) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@2560c400
 2021-12-29 19:42:49.990 INFO  (qtp319670866-16) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
 2021-12-29 19:42:50.012 INFO  (qtp319670866-16) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=nutch&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=88
+2021-12-29 19:44:04.890 INFO  (qtp319670866-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640806694700} status=0 QTime=2
+2021-12-29 19:44:04.938 INFO  (qtp319670866-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640806694700} status=0 QTime=21
+2021-12-29 19:44:04.947 INFO  (qtp319670866-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640806694700} status=0 QTime=49
