@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2021-12-29 19:35:55.156 INFO  (main) [   ] o.e.j.u.log Logging initialized @3459ms to org.eclipse.jetty.util.log.Slf4jLog
 2021-12-29 19:35:55.742 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 13.0.5.1+1-Debian-1
 2021-12-29 19:35:55.808 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/dhinesh/Downloads/bakup/searchEngine/search/solr/server/contexts/] at interval 0
@@ -90,3 +91,35 @@
 2021-12-29 19:44:04.890 INFO  (qtp319670866-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640806694700} status=0 QTime=2
 2021-12-29 19:44:04.938 INFO  (qtp319670866-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640806694700} status=0 QTime=21
 2021-12-29 19:44:04.947 INFO  (qtp319670866-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640806694700} status=0 QTime=49
+=======
+2021-12-29 19:01:21.236 INFO  (main) [   ] o.e.j.u.log Logging initialized @2938ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-29 19:01:21.870 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 13.0.5.1+1-Debian-1
+2021-12-29 19:01:21.939 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/contexts/] at interval 0
+2021-12-29 19:01:23.887 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-29 19:01:23.929 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-29 19:01:23.929 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-29 19:01:23.936 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-12-29 19:01:24.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-29 19:01:24.249 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
+2021-12-29 19:01:24.250 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-12-29 19:01:24.251 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr
+2021-12-29 19:01:24.252 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-29T19:01:24.252023Z
+2021-12-29 19:01:24.385 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
+2021-12-29 19:01:24.399 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/solr.xml
+2021-12-29 19:01:24.768 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10, but no JMX reporters were configured - adding default JMX reporter.
+2021-12-29 19:01:26.367 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-12-29 19:01:26.962 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
+2021-12-29 19:01:26.966 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
+2021-12-29 19:01:27.571 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
+2021-12-29 19:01:27.572 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
+2021-12-29 19:01:27.617 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-12-29 19:01:28.030 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-12-29 19:01:28.036 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-12-29 19:01:28.240 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-29 19:01:28.246 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-29 19:01:28.259 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-29 19:01:28.371 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
+2021-12-29 19:01:28.536 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a1c17f{/solr,file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
+2021-12-29 19:01:28.553 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2021-12-29 19:01:28.556 INFO  (main) [   ] o.e.j.s.Server Started @10260ms
+>>>>>>> a944bd6a3917618c10d698f9fb5b5d99b43a8ded
