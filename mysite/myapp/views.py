@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
 from django.http import FileResponse
+
 import urllib3
 import json
+import subprocess
 
 # Create your views here. (WTF IS VIEWS ????)
 from django.http import HttpResponse
@@ -34,6 +35,12 @@ def search(request):
     else:
         return HttpResponse("u Hecker :(")
 
-def media(request):
+def flag(request):
+    # command = 'ls'
+    # print(subprocess.run(command, capture_output = True, text = True).stdout.split('\n'))
+    img = open('indianFlag.png', 'rb')
+    return FileResponse(img)
+
+def icon(request):
     img = open('favicon.ico', 'rb')
     return FileResponse(img)

@@ -4,7 +4,7 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
 ../solr/bin/solr stop -all && \
 ../solr/bin/solr start
-
+../solr/bin/solr create -c nutch -d solr/server/solr/configsets/nutch/conf
 
 
 bin/nutch inject crawl/crawldb urls && \
