@@ -13,7 +13,7 @@ A search engine which is used for search in private networks.
 
 ### for Debian based distros
 
-Pre-requestie: python3
+Pre-requestie: python3, nmap
 
 `
 pip3 install urllib3 django bs4 requests subprocess
