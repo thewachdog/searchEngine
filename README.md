@@ -13,6 +13,12 @@ A search engine which is used for search in private networks.
 
 ### for Debian based distros
 
+Pre-requestie: python3
+
+`
+pip3 install urllib3 django bs4 requests subprocess
+`
+
 Clone this repo
 `
 git clone https://github.com/thewachdog/searchEngine.git
