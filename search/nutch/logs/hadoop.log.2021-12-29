@@ -1,0 +1,353 @@
+2021-12-29 23:40:41,605 INFO  crawl.Injector - Injector: starting at 2021-12-29 23:40:41
+2021-12-29 23:40:41,608 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2021-12-29 23:40:41,608 INFO  crawl.Injector - Injector: urlDir: urls
+2021-12-29 23:40:41,609 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2021-12-29 23:40:42,020 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:40:42,775 INFO  crawl.Injector - Injecting seed URL file file:/home/dhinesh/Desktop/barat/projects/searchEngine/search/nutch/urls/seed.txt
+2021-12-29 23:40:42,935 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:40:44,489 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:40:44,490 INFO  mapreduce.Job - Running job: job_local102902649_0001
+2021-12-29 23:40:45,519 INFO  mapreduce.Job - Job job_local102902649_0001 running in uber mode : false
+2021-12-29 23:40:45,531 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-29 23:40:45,871 WARN  crawl.Injector - Skipping http://192.168.240.25:5501http://192.168.240.25:5500http://192.168.240.25:5500:java.net.MalformedURLException: Error at index 4 in: "5501http:"
+2021-12-29 23:40:45,941 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:40:46,159 INFO  crawl.Injector - Injector: overwrite: false
+2021-12-29 23:40:46,159 INFO  crawl.Injector - Injector: update: false
+2021-12-29 23:40:46,538 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:40:46,539 INFO  mapreduce.Job - Job job_local102902649_0001 completed successfully
+2021-12-29 23:40:46,578 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=2848863
+		FILE: Number of bytes written=4659253
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=8
+		Map output records=7
+		Map output bytes=1577
+		Map output materialized bytes=1610
+		Input split bytes=642
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=7
+		Reduce shuffle bytes=1610
+		Reduce input records=7
+		Reduce output records=7
+		Spilled Records=14
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=14
+		Total committed heap usage (bytes)=617611264
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	injector
+		urls_filtered=1
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=1975
+2021-12-29 23:40:46,653 INFO  crawl.Injector - Injector: Total urls rejected by filters: 1
+2021-12-29 23:40:46,653 INFO  crawl.Injector - Injector: Total urls injected after normalization and filtering: 0
+2021-12-29 23:40:46,653 INFO  crawl.Injector - Injector: Total urls injected but already in CrawlDb: 0
+2021-12-29 23:40:46,653 INFO  crawl.Injector - Injector: Total new urls injected: 0
+2021-12-29 23:40:46,668 INFO  crawl.Injector - Injector: finished at 2021-12-29 23:40:46, elapsed: 00:00:05
+2021-12-29 23:40:48,662 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:40:49,213 INFO  crawl.Generator - Generator: starting at 2021-12-29 23:40:49
+2021-12-29 23:40:49,213 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2021-12-29 23:40:49,213 INFO  crawl.Generator - Generator: filtering: true
+2021-12-29 23:40:49,213 INFO  crawl.Generator - Generator: normalizing: true
+2021-12-29 23:40:49,236 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2021-12-29 23:40:49,372 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:40:50,772 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:40:50,773 INFO  mapreduce.Job - Running job: job_local991770130_0001
+2021-12-29 23:40:51,723 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2021-12-29 23:40:51,726 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2021-12-29 23:40:51,727 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2021-12-29 23:40:51,782 INFO  mapreduce.Job - Job job_local991770130_0001 running in uber mode : false
+2021-12-29 23:40:51,784 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-29 23:40:51,854 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:40:52,789 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:40:52,790 INFO  mapreduce.Job - Job job_local991770130_0001 completed successfully
+2021-12-29 23:40:52,812 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1895132
+		FILE: Number of bytes written=3107844
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=7
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=172
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=23
+		Total committed heap usage (bytes)=406847488
+	Generator
+		SCHEDULE_REJECTED=7
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1743
+	File Output Format Counters 
+		Bytes Written=8
+2021-12-29 23:40:52,813 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2021-12-29 23:40:52,830 INFO  crawl.Generator - Generator:      7  SCHEDULE_REJECTED
+2021-12-29 23:40:52,833 WARN  crawl.Generator - Generator: 0 records selected for fetching, exiting ...
+2021-12-29 23:40:54,461 INFO  fetcher.Fetcher - Fetcher: starting at 2021-12-29 23:40:54
+2021-12-29 23:40:54,462 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20211226175029
+2021-12-29 23:40:54,835 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:40:55,336 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:40:55,594 ERROR fetcher.Fetcher - Fetcher: java.io.IOException: Segment already fetched!
+	at org.apache.nutch.fetcher.FetcherOutputFormat.checkOutputSpecs(FetcherOutputFormat.java:55)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.fetcher.Fetcher.fetch(Fetcher.java:498)
+	at org.apache.nutch.fetcher.Fetcher.run(Fetcher.java:545)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.fetcher.Fetcher.main(Fetcher.java:518)
+
+2021-12-29 23:40:57,517 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:40:58,076 INFO  crawl.Generator - Generator: starting at 2021-12-29 23:40:58
+2021-12-29 23:40:58,077 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2021-12-29 23:40:58,077 INFO  crawl.Generator - Generator: filtering: true
+2021-12-29 23:40:58,077 INFO  crawl.Generator - Generator: normalizing: true
+2021-12-29 23:40:58,080 INFO  crawl.Generator - Generator: topN: 1000
+2021-12-29 23:40:58,095 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2021-12-29 23:40:58,234 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:40:59,529 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:40:59,530 INFO  mapreduce.Job - Running job: job_local852103660_0001
+2021-12-29 23:41:00,455 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2021-12-29 23:41:00,460 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2021-12-29 23:41:00,460 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2021-12-29 23:41:00,538 INFO  mapreduce.Job - Job job_local852103660_0001 running in uber mode : false
+2021-12-29 23:41:00,540 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-29 23:41:00,616 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:41:01,544 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:41:01,545 INFO  mapreduce.Job - Job job_local852103660_0001 completed successfully
+2021-12-29 23:41:01,574 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1895132
+		FILE: Number of bytes written=3107784
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=7
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=172
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=14
+		Total committed heap usage (bytes)=413138944
+	Generator
+		SCHEDULE_REJECTED=7
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1743
+	File Output Format Counters 
+		Bytes Written=8
+2021-12-29 23:41:01,574 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2021-12-29 23:41:01,583 INFO  crawl.Generator - Generator:      7  SCHEDULE_REJECTED
+2021-12-29 23:41:01,586 WARN  crawl.Generator - Generator: 0 records selected for fetching, exiting ...
+2021-12-29 23:41:03,574 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:41:04,125 INFO  crawl.Generator - Generator: starting at 2021-12-29 23:41:04
+2021-12-29 23:41:04,126 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2021-12-29 23:41:04,126 INFO  crawl.Generator - Generator: filtering: true
+2021-12-29 23:41:04,127 INFO  crawl.Generator - Generator: normalizing: true
+2021-12-29 23:41:04,130 INFO  crawl.Generator - Generator: topN: 1000
+2021-12-29 23:41:04,143 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2021-12-29 23:41:04,288 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:41:05,677 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:41:05,678 INFO  mapreduce.Job - Running job: job_local159768633_0001
+2021-12-29 23:41:06,626 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2021-12-29 23:41:06,628 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2021-12-29 23:41:06,628 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2021-12-29 23:41:06,704 INFO  mapreduce.Job - Job job_local159768633_0001 running in uber mode : false
+2021-12-29 23:41:06,707 INFO  mapreduce.Job -  map 0% reduce 0%
+2021-12-29 23:41:06,803 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:41:07,711 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:41:07,712 INFO  mapreduce.Job - Job job_local159768633_0001 completed successfully
+2021-12-29 23:41:07,740 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1895132
+		FILE: Number of bytes written=3107784
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=7
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=172
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=18
+		Total committed heap usage (bytes)=413138944
+	Generator
+		SCHEDULE_REJECTED=7
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1743
+	File Output Format Counters 
+		Bytes Written=8
+2021-12-29 23:41:07,740 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2021-12-29 23:41:07,750 INFO  crawl.Generator - Generator:      7  SCHEDULE_REJECTED
+2021-12-29 23:41:07,758 WARN  crawl.Generator - Generator: 0 records selected for fetching, exiting ...
+2021-12-29 23:41:09,709 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-12-29 23:41:10,276 INFO  crawl.LinkDb - LinkDb: starting at 2021-12-29 23:41:10
+2021-12-29 23:41:10,276 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2021-12-29 23:41:10,276 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2021-12-29 23:41:10,276 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2021-12-29 23:41:10,276 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2021-12-29 23:41:10,277 INFO  crawl.LinkDb - LinkDb: adding segment: file:/home/dhinesh/Desktop/barat/projects/searchEngine/search/nutch/crawl/segments/20211226174351
+2021-12-29 23:41:10,282 INFO  crawl.LinkDb - LinkDb: adding segment: file:/home/dhinesh/Desktop/barat/projects/searchEngine/search/nutch/crawl/segments/20211226174843
+2021-12-29 23:41:10,283 INFO  crawl.LinkDb - LinkDb: adding segment: file:/home/dhinesh/Desktop/barat/projects/searchEngine/search/nutch/crawl/segments/20211226175029
+2021-12-29 23:41:10,404 WARN  impl.MetricsConfig - Cannot locate configuration: tried hadoop-metrics2-jobtracker.properties,hadoop-metrics2.properties
+2021-12-29 23:41:11,817 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:41:11,819 INFO  mapreduce.Job - Running job: job_local1253443112_0001
+2021-12-29 23:41:12,532 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:41:12,845 INFO  mapreduce.Job - Job job_local1253443112_0001 running in uber mode : false
+2021-12-29 23:41:12,847 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:41:12,849 INFO  mapreduce.Job - Job job_local1253443112_0001 completed successfully
+2021-12-29 23:41:12,868 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3803693
+		FILE: Number of bytes written=6214383
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=18
+		Input split bytes=573
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=18
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=20
+		Total committed heap usage (bytes)=816840704
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=4549
+	File Output Format Counters 
+		Bytes Written=279
+2021-12-29 23:41:12,869 INFO  crawl.LinkDb - LinkDb: merging with existing linkdb: crawl/linkdb
+2021-12-29 23:41:12,878 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:41:13,210 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2021-12-29 23:41:13,210 INFO  mapreduce.Job - Running job: job_local1678597657_0002
+2021-12-29 23:41:13,911 WARN  impl.MetricsSystemImpl - JobTracker metrics system already initialized!
+2021-12-29 23:41:14,211 INFO  mapreduce.Job - Job job_local1678597657_0002 running in uber mode : false
+2021-12-29 23:41:14,211 INFO  mapreduce.Job -  map 100% reduce 100%
+2021-12-29 23:41:14,212 INFO  mapreduce.Job - Job job_local1678597657_0002 completed successfully
+2021-12-29 23:41:14,228 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=5695758
+		FILE: Number of bytes written=9321409
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=0
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=12
+		Input split bytes=345
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=12
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=10
+		Total committed heap usage (bytes)=625999872
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=276
+	File Output Format Counters 
+		Bytes Written=279
+2021-12-29 23:41:14,255 INFO  crawl.LinkDb - LinkDb: finished at 2021-12-29 23:41:14, elapsed: 00:00:03

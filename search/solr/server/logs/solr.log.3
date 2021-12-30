@@ -1,86 +1,98 @@
-2021-12-26 13:09:36.120 INFO  (main) [   ] o.e.j.u.log Logging initialized @2963ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-12-26 13:09:36.595 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 13.0.5.1+1-Debian-1
-2021-12-26 13:09:36.642 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/contexts/] at interval 0
-2021-12-26 13:09:37.290 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-12-26 13:09:37.311 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-12-26 13:09:37.311 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-12-26 13:09:37.318 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-12-26 13:09:37.555 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-12-26 13:09:37.563 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
-2021-12-26 13:09:37.563 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-12-26 13:09:37.563 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr
-2021-12-26 13:09:37.564 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-26T13:09:37.564357Z
-2021-12-26 13:09:37.653 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
-2021-12-26 13:09:37.669 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/solr.xml
-2021-12-26 13:09:37.927 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10, but no JMX reporters were configured - adding default JMX reporter.
-2021-12-26 13:09:39.343 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-12-26 13:09:39.966 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
-2021-12-26 13:09:39.969 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
-2021-12-26 13:09:40.571 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
-2021-12-26 13:09:40.572 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
-2021-12-26 13:09:40.618 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-12-26 13:09:41.042 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2021-12-26 13:09:41.047 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-12-26 13:09:41.244 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
-2021-12-26 13:09:41.245 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
-2021-12-26 13:09:41.257 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
-2021-12-26 13:09:41.359 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
-2021-12-26 13:09:41.364 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
-2021-12-26 13:09:41.531 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
-2021-12-26 13:09:41.645 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a1c17f{/solr,file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
-2021-12-26 13:09:41.684 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2021-12-26 13:09:41.685 INFO  (main) [   ] o.e.j.s.Server Started @8533ms
-2021-12-26 13:09:41.969 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
-2021-12-26 13:09:42.088 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.101 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.115 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.145 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.158 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.168 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.477 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.494 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
-2021-12-26 13:09:42.760 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
-2021-12-26 13:09:42.794 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch, trusted=true
-2021-12-26 13:09:42.926 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
-2021-12-26 13:09:42.957 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch], dataDir=[/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch/data/]
-2021-12-26 13:09:44.106 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-12-26 13:09:44.107 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-12-26 13:09:44.153 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-12-26 13:09:44.153 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-12-26 13:09:44.460 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@76de4151[nutch] main]
-2021-12-26 13:09:44.478 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch/conf
-2021-12-26 13:09:44.529 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-12-26 13:09:44.582 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2021-12-26 13:09:44.609 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2021-12-26 13:09:44.655 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@76de4151[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C1:[diagnostics={java.vendor=Debian, os=Linux, java.version=13.0.5.1, java.vm.version=13.0.5.1+1-Debian-1, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=13.0.5.1+1-Debian-1, source=flush, os.version=5.14.0-9parrot1-amd64, timestamp=1640521351760}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2021-12-26 13:09:44.656 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-12-26 13:09:44.656 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-12-26 13:09:44.680 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@76de4151[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C1:[diagnostics={java.vendor=Debian, os=Linux, java.version=13.0.5.1, java.vm.version=13.0.5.1+1-Debian-1, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=13.0.5.1+1-Debian-1, source=flush, os.version=5.14.0-9parrot1-amd64, timestamp=1640521351760}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
-2021-12-26 13:17:06.697 INFO  (qtp1651667865-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640524626200} status=0 QTime=58
-2021-12-26 13:17:06.744 INFO  (qtp1651667865-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640524626200} status=0 QTime=96
-2021-12-26 13:17:11.547 INFO  (qtp1651667865-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1640524626500} hits=1 status=0 QTime=158
-2021-12-26 13:17:20.499 INFO  (qtp1651667865-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food&_=1640524626500} hits=1 status=0 QTime=101
-2021-12-26 13:17:22.238 INFO  (qtp1651667865-22) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food&_=1640524626500} hits=1 status=0 QTime=8
-2021-12-26 13:19:35.482 INFO  (qtp1651667865-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=1
-2021-12-26 13:26:53.384 INFO  (qtp1651667865-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=1
-2021-12-26 13:29:03.678 INFO  (qtp1651667865-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=105
-2021-12-26 13:29:59.814 INFO  (qtp1651667865-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=1
-2021-12-26 13:30:28.739 INFO  (qtp1651667865-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=1
-2021-12-26 13:30:44.235 INFO  (qtp1651667865-20) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=food} hits=1 status=0 QTime=0
-2021-12-26 13:31:04.799 INFO  (qtp1651667865-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=a} hits=1 status=0 QTime=91
-2021-12-26 13:32:23.458 INFO  (qtp1651667865-16) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=la} hits=0 status=0 QTime=29
-2021-12-26 13:32:31.919 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=index} hits=0 status=0 QTime=207
-2021-12-26 14:15:13.205 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2021-12-26 14:15:13.206 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
-2021-12-26 14:15:13.307 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1832657711
-2021-12-26 14:15:13.310 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@1952bc77
-2021-12-26 14:15:13.310 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@1952bc77
-2021-12-26 14:15:13.311 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2e9a65cf: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@50996fa7
-2021-12-26 14:15:13.490 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2021-12-26 14:15:13.711 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2021-12-26 14:15:13.713 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61f6d381: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@29e8750d
-2021-12-26 14:15:13.722 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2021-12-26 14:15:13.728 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@29fd8e67: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@2f933e57
-2021-12-26 14:15:13.730 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2021-12-26 14:15:13.731 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@e146f93: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@69bdb52a
-2021-12-26 14:15:13.796 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@24a1c17f{/solr,null,UNAVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
+2021-12-28 17:27:24.521 INFO  (main) [   ] o.e.j.u.log Logging initialized @3609ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-28 17:27:25.028 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 13.0.5.1+1-Debian-1
+2021-12-28 17:27:25.069 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/contexts/] at interval 0
+2021-12-28 17:27:25.724 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-28 17:27:25.746 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-28 17:27:25.746 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-28 17:27:25.751 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-12-28 17:27:25.954 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-28 17:27:25.961 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
+2021-12-28 17:27:25.961 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-12-28 17:27:25.963 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr
+2021-12-28 17:27:25.965 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-28T17:27:25.964918Z
+2021-12-28 17:27:26.020 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
+2021-12-28 17:27:26.031 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/solr.xml
+2021-12-28 17:27:26.296 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10, but no JMX reporters were configured - adding default JMX reporter.
+2021-12-28 17:27:27.487 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-12-28 17:27:28.241 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
+2021-12-28 17:27:28.242 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3d5790ea[provider=null,keyStore=null,trustStore=null]
+2021-12-28 17:27:28.691 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
+2021-12-28 17:27:28.692 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e7ab390[provider=null,keyStore=null,trustStore=null]
+2021-12-28 17:27:28.730 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-12-28 17:27:29.142 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-12-28 17:27:29.147 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-12-28 17:27:29.363 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-28 17:27:29.364 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-28 17:27:29.378 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-28 17:27:29.446 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr
+2021-12-28 17:27:29.447 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [nutch]
+2021-12-28 17:27:29.648 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2021-12-28 17:27:29.785 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@24a1c17f{/solr,file:///home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
+2021-12-28 17:27:29.835 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2021-12-28 17:27:29.836 INFO  (main) [   ] o.e.j.s.Server Started @8928ms
+2021-12-28 17:27:30.049 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2021-12-28 17:27:30.152 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.159 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.165 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.176 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.186 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.192 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.508 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.530 WARN  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2021-12-28 17:27:30.861 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2021-12-28 17:27:30.920 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch, trusted=true
+2021-12-28 17:27:30.994 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@b978d10
+2021-12-28 17:27:31.027 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch], dataDir=[/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch/data/]
+2021-12-28 17:27:32.420 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-12-28 17:27:32.421 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-12-28 17:27:32.464 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-28 17:27:32.465 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-28 17:27:32.713 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@7ae73bcf[nutch] main]
+2021-12-28 17:27:32.729 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr/nutch/conf
+2021-12-28 17:27:32.782 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-28 17:27:32.798 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-12-28 17:27:32.847 INFO  (coreLoadExecutor-9-thread-1) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2021-12-28 17:27:32.907 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7ae73bcf[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C1:[diagnostics={java.vendor=Debian, os=Linux, java.version=13.0.5.1, java.vm.version=13.0.5.1+1-Debian-1, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=13.0.5.1+1-Debian-1, source=flush, os.version=5.14.0-9parrot1-amd64, timestamp=1640521351760}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2021-12-28 17:27:32.907 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-28 17:27:32.908 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-28 17:27:32.938 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@7ae73bcf[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C1:[diagnostics={java.vendor=Debian, os=Linux, java.version=13.0.5.1, java.vm.version=13.0.5.1+1-Debian-1, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=13.0.5.1+1-Debian-1, source=flush, os.version=5.14.0-9parrot1-amd64, timestamp=1640521351760}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2021-12-28 17:31:14.212 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@6373482e[nutch] realtime]
+2021-12-28 17:31:14.216 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1720411933078716416,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2021-12-28 17:31:14.217 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@18d63a5e commitCommandVersion:1720411933078716416
+2021-12-28 17:31:14.290 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@5a937e2e[nutch] main]
+2021-12-28 17:31:14.316 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2021-12-28 17:31:14.317 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5a937e2e[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2021-12-28 17:31:14.317 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-28 17:31:14.348 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@5a937e2e[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2021-12-28 17:31:14.370 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.u.p.LogUpdateProcessorFactory [nutch]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1720411932898361344),commit=} 0 371
+2021-12-28 17:31:37.720 INFO  (qtp1651667865-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640712697300} status=0 QTime=10
+2021-12-28 17:31:37.730 INFO  (qtp1651667865-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640712697300} status=0 QTime=15
+2021-12-28 17:31:37.739 INFO  (qtp1651667865-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640712697300} status=0 QTime=27
+2021-12-28 17:31:47.408 INFO  (qtp1651667865-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640712697300} status=0 QTime=0
+2021-12-28 17:31:47.426 INFO  (qtp1651667865-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1640712707300} status=0 QTime=3
+2021-12-28 17:31:47.432 INFO  (qtp1651667865-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640712697300} status=0 QTime=18
+2021-12-28 17:31:47.447 INFO  (qtp1651667865-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/replication params={wt=json&command=details&_=1640712707300} status=0 QTime=5
+2021-12-28 17:31:47.466 INFO  (qtp1651667865-17) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1640712697300&ts=1640712697300} status=503 QTime=7
+2021-12-28 17:31:47.476 INFO  (qtp1651667865-18) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/admin/system params={wt=json&_=1640712707300} status=0 QTime=27
+2021-12-28 17:31:50.771 INFO  (qtp1651667865-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640712697300} status=0 QTime=0
+2021-12-28 17:31:50.797 INFO  (qtp1651667865-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640712697300} status=0 QTime=6
+2021-12-28 17:31:54.682 INFO  (qtp1651667865-21) [   x:nutch] o.a.s.c.S.Request [nutch]  webapp=/solr path=/select params={q=*:*&_=1640712710700} hits=0 status=0 QTime=24
+2021-12-28 17:33:53.875 INFO  (qtp1651667865-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2021-12-28 17:33:53.949 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=null
+2021-12-28 17:33:53.960 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@23c481ac: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@2cdcdd01
+2021-12-28 17:33:54.027 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@5bbd4a8b
+2021-12-28 17:33:54.027 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@5bbd4a8b
+2021-12-28 17:33:54.029 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-12-28 17:33:54.051 INFO  (qtp1651667865-23) [   x:nutch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=nutch&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=103
+2021-12-28 17:34:04.224 INFO  (qtp1651667865-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1640712843300} status=0 QTime=0
+2021-12-28 17:34:04.255 INFO  (qtp1651667865-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1640712843300} status=0 QTime=29
+2021-12-28 23:54:33.986 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1623134f{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2021-12-28 23:54:33.987 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-12-28 23:54:34.264 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1832657711
+2021-12-28 23:54:34.270 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2021-12-28 23:54:34.271 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61f6d381: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@67028e5c
+2021-12-28 23:54:34.284 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2021-12-28 23:54:34.288 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@29fd8e67: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@7d6aedb5
+2021-12-28 23:54:34.291 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2021-12-28 23:54:34.292 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@e146f93: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@613a01ce
+2021-12-28 23:54:34.808 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@24a1c17f{/solr,null,UNAVAILABLE}{/home/dhinesh/Desktop/barat/projects/searchEngine/search/solr/server/solr-webapp/webapp}
